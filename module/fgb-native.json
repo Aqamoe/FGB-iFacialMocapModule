@@ -1,0 +1,17 @@
+{
+  "ModuleId": "com.fgbbridge.ifacialmocap",
+  "ModuleName": "iFacialMocap",
+  "AuthorName": "Aqamoe (光水)",
+  "Version": "0.1.0",
+  "ModuleDescription": "接收 iFacialMocap App 的 UDP 数据，输出 Unified Expressions 表情、睁眼度与逐眼方向。不需要 VRCFT，不注入进程。",
+  "UsageInstructions": "1. 手机装好 iFacialMocap，连到同一 WiFi 并开始发送（默认端口 49983）。2. 关闭 VRCFaceTracking，它和本模块抢同一个端口。3. 在「模块」页把 iFacialMocap 设为启动并重启引擎；模块卡片应显示活跃，并提示已向手机回握手包。本模块为社区未验证实现。",
+  "ModulePageUrl": "https://github.com/Aqamoe/FGB-iFacialMocapModule",
+  "ModuleIcon": "icon.svg",
+  "DllFileName": "ifacialmocap.dll",
+  "AbiVersion": 2,
+  "Capabilities": [
+    "expression",
+    "eyes"
+  ],
+  "RoleHint": "expression"
+}
